@@ -20,7 +20,7 @@ export const BannerElement = styled.div`
   padding: 32px;
   text-align: center;
   animation: ${slideUp} 750ms cubic-bezier(0, 0.72, 0.24, 1.02);
-  border-radius: 4px 4px 0px 0px;
+  border-radius: 32px 32px 0px 0px;
   will-change: transform;
   font-size: 1.3rem;
   &.winner {
@@ -30,5 +30,8 @@ export const BannerElement = styled.div`
   &.looser {
     background: hsl(0deg 70% 45%);
     color: white;
+  }
+  @media (max-width: 425px) {
+    border-radius: 0px;
   }
 `

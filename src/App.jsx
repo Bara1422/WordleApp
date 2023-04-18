@@ -1,4 +1,3 @@
-import './App.css'
 import { GameWrapper, Header, Wrapper } from './AppStyles'
 import Game from './components/Game/Game'
 

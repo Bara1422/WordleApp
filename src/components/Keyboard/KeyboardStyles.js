@@ -37,6 +37,7 @@ export const KeyboardKey = styled.button`
   }
   @media (max-width: 425px) {
     font-size: 0.95rem;
+    height: 48px;
   }
   &:hover {
     background-color: hsl(0deg 0% 70%);
