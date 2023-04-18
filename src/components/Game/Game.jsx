@@ -17,7 +17,6 @@ const Game = () => {
 
   const handleWords = useCallback(
     (label) => {
-      console.log('handleWords')
       const nextWords = [...words, label]
       setWords(nextWords)
       if (label.toUpperCase() === answer) setGameState('win')
