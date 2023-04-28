@@ -41,7 +41,9 @@ const GameInput = ({ handleWords, validatedWords, gameStatus }) => {
           title='5 letter word'
           disabled={gameStatus !== 'run'}
           value={value}
-          onChange={(e) => setValue(e.target.value.trim().toUpperCase())}
+          onChange={(e) =>
+            setValue(e.target.value.trim().toUpperCase().slice(0, 5))
+          }
         />
       </InputWrapper>
       <Keyboard
